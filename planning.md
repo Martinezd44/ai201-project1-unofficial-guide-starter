@@ -10,6 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+My domain is student reviews and opinions of professors at Montclair State University, focused on what classes are actually like: grading style, workload, attendance policies, and whether students would take the professor again. This knowledge is hard to find otherwise because it's scattered across hundreds of individual Rate My Professors pages and buried in Reddit threads — there's no single place to ask "which CSIT professors are flexible with late work?" The official university catalog describes courses but says nothing about the real student experience of taking them.
 
 ---
 
@@ -17,11 +18,19 @@
 
 <!-- List your specific sources: URLs, subreddit names, forum threads, or file descriptions.
      Aim for at least 10 sources that together cover different subtopics or perspectives within your domain. -->
+     School-wide page: https://www.ratemyprofessors.com/school/630 
+
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
+| 1 |https://www.ratemyprofessors.com/school/630  |School wide page  | |
+| 2 |All MSU professors search: https://www.ratemyprofessors.com/search/professors/630?q=* | | |
+Example professor pages I confirmed exist: https://www.ratemyprofessors.com/professor/1317879 (Conway, History),
+ https://www.ratemyprofessors.com/professor/863633 (Woodard, History), 
+ https://www.ratemyprofessors.com/professor/1763018 (Miller, English), 
+ https://www.ratemyprofessors.com/professor/432916 (Stewart), 
+ https://www.ratemyprofessors.com/professor/1581693 (Kumar),
+  https://www.ratemyprofessors.com/professor/3070931 (Zhou)
 | 3 | | | |
 | 4 | | | |
 | 5 | | | |
