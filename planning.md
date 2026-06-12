@@ -47,14 +47,14 @@ Example professor pages I confirmed exist: https://www.ratemyprofessors.com/prof
 <!-- How will you split documents into chunks?
      State your chunk size (in tokens or characters), overlap size, and explain why those
      numbers fit the structure of your documents.
-     A review-heavy corpus warrants different chunking than a long FAQ. -->
+     A review-heavy corpus warrants different chunking than a long FAQ. --> 
 
 **Chunk size:**
-
+ about 250 tokens or about 100 characters with one chunk per RMP review where possible. Reddit threads are split at the comment level, merging very short comments with their parent until a chunk reaches 250 tokens 
 **Overlap:**
-
+0 tokens for RMP reviews 50 tokens for long reddit comments that must be split mid tex 
 **Reasoning:**
-
+My corpus is dominated by the Rate my Professors reviews which are short 205 sentences. and self contained- each one already expresses a complete opinion about one professor's grading, worldoad or teaching style. Splitting a review in half would separate a claimn from its context . And merging multiple reviews into one chunk would blend contradictory opinions from different students causing a ruckess. So the natural unit is one review = one chunk , which makes overlapp unncessary for that portion of the corpus. Each chunk is prepended with meta data so a rerieved chunk is never an orphaned opnion with no referent. Reddit threads have the opposite structure. Facts spread accross lo9ng conversational comments so those are split per comment with a small 50 token overlap. 
 ---
 
 ## Retrieval Approach
@@ -65,11 +65,24 @@ Example professor pages I confirmed exist: https://www.ratemyprofessors.com/prof
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model:** the all Mini LM fre runs locally and 384 dimensional embeddings and its 256 token input limit pairs well with my chunks
 
-**Top-k:**
+**Top-k:** 5 would be the top K
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** If cost weren't a constraint, the biggest factor 
+for this domain would be accuracy on informal, opinionated text. Student reviews are 
+full of slang, sarcasm, and abbreviations. and a larger model like OpenAI's text-embedding-3-large or Cohere's embed-v3 captures 
+the semantics of casual language better than a small distilled model. Context length 
+matters less for me — my chunks are deliberately small — but it would matter if I 
+switched to chunking whole Reddit threads. Multilingual support would be worth weighing 
+at MSU specifically, since it's a Hispanic-Serving Institution and some students might 
+query in Spanish; MiniLM is English-only, while a model like multilingual-e5 or 
+embed-multilingual-v3 would let a Spanish query retrieve English reviews. The tradeoff 
+against all of this is latency and infrastructure: MiniLM embeds queries in 
+milliseconds on a CPU, while API-based models add network round-trips and a per-token 
+cost on every single query, not just at indexing time. For a real deployment I'd 
+benchmark a small/large pair on ~20 real student queries and only pay for the large 
+model if retrieval quality measurably improved.
 
 ---
 
@@ -82,11 +95,11 @@ Example professor pages I confirmed exist: https://www.ratemyprofessors.com/prof
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | What do students say about grading | expected answer something about how they grade  |
+| 2 | Attendace policy|How they take attendace  |
+| 3 | What do they think about the teaching style | How do they teach |
+| 4 |What tests the give  |If there is a midterm and how hard finals are  |
+| 5 | Which professor should I take for this course| If the professor is easy or hard for the course|
 
 ---
 
@@ -96,9 +109,18 @@ Example professor pages I confirmed exist: https://www.ratemyprofessors.com/prof
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. Mis attribution across professors because each chunk is a single review a retrieval miss can pull in reviews of the wrong professor. Especially ones with similar names orwho teach the same course and the LLM will confidently present Professor A's "tough grader , avoid" review as if it describes Professor B in this domain that's not just an inaccuracy. it's an unfair claim about a real person's 
+teaching. Mitigation: prepend professor name and course code to every chunk, and 
+instruct the model in the prompt to only make claims about a professor when the 
+retrieved chunk explicitly names them.
 
-2.
+2.Selection bias presented as consensus. RMP reviews skew toward students 
+with strong feelings — often the angry ones — so a professor with 6 reviews might have 
+4 from one bad semester. My system can launder that bias into authoritative-sounding 
+output: "students consistently report he is unhelpful" based on a handful of unhappy 
+reviewers. Mitigation: the prompt instructs the model to hedge by sample size 
+("a few students say...") and to surface disagreement when retrieved reviews conflict 
+rather than picking a side.
 
 ---
 
@@ -110,7 +132,7 @@ Example professor pages I confirmed exist: https://www.ratemyprofessors.com/prof
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
----
+---![alt text](image.png)
 
 ## AI Tool Plan
 
@@ -124,8 +146,19 @@ Example professor pages I confirmed exist: https://www.ratemyprofessors.com/prof
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
 
-**Milestone 3 — Ingestion and chunking:**
+     I will be using Claude Code for the entire plan 
 
+     
+
+**Milestone 3 — Ingestion and chunking:** - My chunking strategy section is from sample .txt files from my corpus and expected output functions that splits RMP files into one review per chunk splits Reddit files per comment with 50 toekn overlap on oversized comments and prepends the metadata prefix  to each chunk 
+To veryift it run it on my sample files and manually inspect the chunks confirm no review is split across two chunks, every chunk starts with the meta data prefix andn o chunk exceeds 250 tokens 
 **Milestone 4 — Embedding and retrieval:**
-
+My embedding model section and the starts repos existing code structure so Claude matches its conventions isntead of inventing new ones. 
+The expected out put is that the Code embeds all chunks with the all miniLM l6 v2 and stores them 
 **Milestone 5 — Generation and interface:**
+ A command-line interface — the user types a question, the system 
+prints the generated answer followed by a "Sources" list showing which professor 
+pages / threads the retrieved chunks came from. Keeping the interface minimal lets 
+me spend the effort on retrieval quality, which is what this project actually 
+grades. If time allows, a stretch goal is a simple Streamlit page with a text box 
+and answer display, since the pipeline code is identical underneath.
