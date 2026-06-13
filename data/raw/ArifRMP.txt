@@ -1,0 +1,8 @@
+PROFESSOR: Arif
+DEPARTMENT: Statistics
+COURSE: STAT-230
+SOURCE: https://www.ratemyprofessors.com/professor/3129871
+TYPE: rmp
+---
+Rating: 5.0 | Course: STAT230
+Attendance: Mandatory. Would take again: Yes. Grade received: A. Difficulty: 2.0. The professor is good at explaining the complex topics in a simple way. Recommended.

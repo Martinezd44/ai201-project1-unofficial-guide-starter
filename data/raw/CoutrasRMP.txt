@@ -1,0 +1,8 @@
+PROFESSOR: Coutras
+DEPARTMENT: Computer Science
+COURSE: 
+SOURCE: https://www.ratemyprofessors.com/professor/1890638
+TYPE: rmp
+---
+Rating: 2.0 | Course: CSIT340
+Attendance: Mandatory. Grade received: D+. Difficulty: 4.0. Tags: tough grader, test heavy. (Listed under CSIT379, but reviewer says the class was CSIT 340 computer networks.) His course wasn't available but it was CSIT 340 computer networks. He didn't seem to care and I showed up in every class. I did all assignments, but did poorly on the exams which takes up about 80% of your grade. We did not receive any study guides or any sort of guidance on the midterms or finals. Unfortunate but maybe I should've tried harder.

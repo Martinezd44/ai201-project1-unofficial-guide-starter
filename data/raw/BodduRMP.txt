@@ -1,0 +1,8 @@
+PROFESSOR: Boddu
+DEPARTMENT: Computer Science
+COURSE: CSIT-100
+SOURCE: https://www.ratemyprofessors.com/professor/2460150
+TYPE: rmp
+---
+Rating: 5.0 | Course: CSIT100
+Attendance: Mandatory. Would take again: Yes. Grade received: B+. Online class. Difficulty: 3.0. Tags: gives good feedback, respected, lecture heavy. Professor Boddu is very rigorous and a very nice professor overall.

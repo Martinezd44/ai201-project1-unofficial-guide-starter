@@ -1,0 +1,8 @@
+PROFESSOR: Jenq
+DEPARTMENT: Computer Science
+COURSE: 
+SOURCE: https://www.ratemyprofessors.com/professor/2362955
+TYPE: rmp
+---
+Rating: 4.0 | Course: CSIT337
+Attendance: Not mandatory. Would take again: Yes. Grade received: B. Difficulty: 3.0. Decent workload. Professor has a heavy accent and he was a bit difficult to understand. The class also dives into some outdated technologies (PHP). Not that hard if you have previous web development experience. Trick questions on multiple choice quizzes. Final group project that ended up working solo, handed it in late, and that tanked my grade.

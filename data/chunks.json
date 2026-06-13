@@ -1,0 +1,102 @@
+[
+  {
+    "id": "Antoniou-0-0",
+    "text": "[Antoniou | Computer Science | CSIT230 | Rating 3.0/5] Attendance: Mandatory. Would take again: Yes. Difficulty: 4.0. Tags: get ready to read, caring, graded by few things. Really good professor, you honestly have to work hard to achieve a good grade on his class, A tough grader and also a very understanding professor. Always remember, YOU HAVE TO THINK!",
+    "professor": "Antoniou",
+    "department": "Computer Science",
+    "course": "CSIT230",
+    "rating": "3.0",
+    "source": "https://www.ratemyprofessors.com/professor/275526",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Arif-0-0",
+    "text": "[Arif | Statistics | STAT230 | Rating 5.0/5] Attendance: Mandatory. Would take again: Yes. Grade received: A. Difficulty: 2.0. The professor is good at explaining the complex topics in a simple way. Recommended.",
+    "professor": "Arif",
+    "department": "Statistics",
+    "course": "STAT230",
+    "rating": "5.0",
+    "source": "https://www.ratemyprofessors.com/professor/3129871",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Boddu-0-0",
+    "text": "[Boddu | Computer Science | CSIT100 | Rating 5.0/5] Attendance: Mandatory. Would take again: Yes. Grade received: B+. Online class. Difficulty: 3.0. Tags: gives good feedback, respected, lecture heavy. Professor Boddu is very rigorous and a very nice professor overall.",
+    "professor": "Boddu",
+    "department": "Computer Science",
+    "course": "CSIT100",
+    "rating": "5.0",
+    "source": "https://www.ratemyprofessors.com/professor/2460150",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Coutras-0-0",
+    "text": "[Coutras | Computer Science | CSIT340 | Rating 2.0/5] Attendance: Mandatory. Grade received: D+. Difficulty: 4.0. Tags: tough grader, test heavy. (Listed under CSIT379, but reviewer says the class was CSIT 340 computer networks.) His course wasn't available but it was CSIT 340 computer networks. He didn't seem to care and I showed up in every class. I did all assignments, but did poorly on the exams which takes up about 80% of your grade. We did not receive any study guides or any sort of guidance on the midterms or finals. Unfortunate but maybe I should've tried harder.",
+    "professor": "Coutras",
+    "department": "Computer Science",
+    "course": "CSIT340",
+    "rating": "2.0",
+    "source": "https://www.ratemyprofessors.com/professor/1890638",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Hu-Au-0-0",
+    "text": "[Hu-Au | Computer Science | CSIT104 | Rating 5.0/5] Attendance: Mandatory. Would take again: Yes. Grade received: B. Difficulty: 2.0. Tags: group projects, clear grading criteria, online savvy. The class was relatively straight forward, showing things off slides and explaining things clearly and thoroughly. He answered questions well and would walk around class to help if we were stuck on any online labs. Most of the work and homework was distributed using online Zybooks. The final was very difficult but he curves it. He was great.",
+    "professor": "Hu-Au",
+    "department": "Computer Science",
+    "course": "CSIT104",
+    "rating": "5.0",
+    "source": "https://www.ratemyprofessors.com/professor/2956279",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Jenq-0-0",
+    "text": "[Jenq | Computer Science | CSIT337 | Rating 4.0/5] Attendance: Not mandatory. Would take again: Yes. Grade received: B. Difficulty: 3.0. Decent workload. Professor has a heavy accent and he was a bit difficult to understand. The class also dives into some outdated technologies (PHP). Not that hard if you have previous web development experience. Trick questions on multiple choice quizzes. Final group project that ended up working solo, handed it in late, and that tanked my grade.",
+    "professor": "Jenq",
+    "department": "Computer Science",
+    "course": "CSIT337",
+    "rating": "4.0",
+    "source": "https://www.ratemyprofessors.com/professor/2362955",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Jesse_Parron-0-0",
+    "text": "[Jesse Parron | Computer Science | CSIT231 | Rating 5.0/5] Attendance: Mandatory. Would take again: Yes. Grade received: A-. Tags: extra credit, amazing lectures, inspirational. Believe the reviews!! 11/10",
+    "professor": "Jesse Parron",
+    "department": "Computer Science",
+    "course": "CSIT231",
+    "rating": "5.0",
+    "source": "https://www.ratemyprofessors.com/professor/3026950",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Sotiris_Skevoulis-0-0",
+    "text": "[Sotiris Skevoulis | Computer Science | CSIT100 | Rating 2.0/5] Attendance: Mandatory. Difficulty: 4.0. Tags: lots of homework, caring, test heavy. 200+ assignments, extremely stressful and time consuming, especially if you're not interested/don't know much about computer science. I do believe that for every one of these courses you need to complete the same exact work, so it's more because of the curriculum. He was very understanding (when you could get a hold of him).",
+    "professor": "Sotiris Skevoulis",
+    "department": "Computer Science",
+    "course": "CSIT100",
+    "rating": "2.0",
+    "source": "https://www.ratemyprofessors.com/professor/1951583",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Vijayakanthan-0-0",
+    "text": "[Vijayakanthan | Computer Science | 494 | Rating 5.0/5] Would take again: Yes. Grade received: B-. Difficulty: 4.0. Tags: clear grading criteria, lots of homework, accessible outside class. She gets low ratings bc she doesn't tolerate cheating like a lot of the professors. She will take points off for late work and grades on a slight curve (depending on how the class did). Will mix up your seating and assign seats for the final.",
+    "professor": "Vijayakanthan",
+    "department": "Computer Science",
+    "course": "494",
+    "rating": "5.0",
+    "source": "https://www.ratemyprofessors.com/professor/2905813",
+    "source_type": "rmp"
+  },
+  {
+    "id": "Zhou-0-0",
+    "text": "[Zhou | Computer Science | PY12 | Rating 1.0/5] Attendance: Not mandatory. Difficulty: 5.0. I took her for python and the class was based on zybooks which was extremely useless for learning. How are we supposed to learn from this website?? Class is boring and she needs better public speaking skills respectfully so that she can help make the class more engaging. As a person, shes great. But teaching wise NOOO!!!!",
+    "professor": "Zhou",
+    "department": "Computer Science",
+    "course": "PY12",
+    "rating": "1.0",
+    "source": "https://www.ratemyprofessors.com/professor/3070931",
+    "source_type": "rmp"
+  }
+]

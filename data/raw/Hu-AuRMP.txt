@@ -1,0 +1,8 @@
+PROFESSOR: Hu-Au
+DEPARTMENT: Computer Science
+COURSE: CSIT-104
+SOURCE: https://www.ratemyprofessors.com/professor/2956279
+TYPE: rmp
+---
+Rating: 5.0 | Course: CSIT104
+Attendance: Mandatory. Would take again: Yes. Grade received: B. Difficulty: 2.0. Tags: group projects, clear grading criteria, online savvy. The class was relatively straight forward, showing things off slides and explaining things clearly and thoroughly. He answered questions well and would walk around class to help if we were stuck on any online labs. Most of the work and homework was distributed using online Zybooks. The final was very difficult but he curves it. He was great.
